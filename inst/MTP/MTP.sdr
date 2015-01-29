@@ -1,0 +1,36 @@
+#!/bin/sh
+#
+# Image of moment tensor decomposition -- examples*
+# * using shorthand notation arguments
+#
+# 	http://www.larskrieger.de/mopad/
+#
+# obspy provides a wrapper
+#	
+#	http://docs.obspy.org/packages/obspy.imaging.html#beachballs
+#
+set -e
+#
+OUT="mt.png"
+#
+case $# in
+	3) S=$1 # Strike
+	   D=$2 # Dip
+	   R=$3 # Rake
+	;;
+	4) S=$1; D=$2; R=$3; OUT=$4
+	;;
+	*)
+	echo "input: strike, dip, rake [plot.file=${OUT} (name w/o extension assumes .svg internally)];"
+	;;
+esac
+#
+SDR="${S},${D},${R}"
+#
+# simple plot of a strike slip mt
+echo ${S}
+echo ${D}
+echo ${R}
+echo ${OUT}
+/usr/bin/env obspy-mopad p ${SDR} -I -f ${OUT}
+#

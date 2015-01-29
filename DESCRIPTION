@@ -7,11 +7,15 @@ Author: Andrew J Barbour
 Maintainer: Andrew J Barbour <andy.barbour@gmail.com>
 Description: Create moment tensor representations of earthquakes (beachballs)
     with MoPaD
-Url: MoPaD (http://www.larskrieger.de/mopad/), obspy (http://www.obspy.org)
+Url: MoPaD (http://www.larskrieger.de/mopad/), obspy (http://www.obspy.org),
+    grConvert and grImport2 (https://github.com/sjp/)
 License: GPL (>= 2)
-SystemRequirements: obspy
+SystemRequirements: MoPaD (via obspy scripts)
 Imports:
     Rcpp (>= 0.11.3),
-    png,
-    grid
+    png (>= 0.1-5),
+    grid,
+    tools
+Suggests:
+    devtools
 LinkingTo: Rcpp

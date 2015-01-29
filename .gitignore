@@ -1,3 +1,9 @@
+# possible file extensions
+*.ps
+*.pdf
+*.png
+*.svg
+#
 .Rproj.user
 .Rhistory
 .RData

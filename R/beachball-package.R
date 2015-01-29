@@ -8,4 +8,7 @@
 #' @exportPattern "^[[:alpha:]]+"
 #'
 #' @importFrom Rcpp evalCpp
+# @importFrom XML xmlTreeParse
+#' 
+#' @seealso \code{\link{bb}}
 NULL

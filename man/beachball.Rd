@@ -7,4 +7,7 @@
 \description{
 The \code{beachball} package: earthquake moment tensors in R.
 }
+\seealso{
+\code{\link{bb}}
+}
 

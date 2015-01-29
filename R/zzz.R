@@ -19,6 +19,6 @@
   ##
   pack <- "beachball"
   packageStartupMessage(sprintf("Loaded %s (%s) -- Seismic moment tensors",
-  				pack,
+                                pack, 
                                 utils::packageVersion(pack)))
 }

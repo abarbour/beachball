@@ -1,0 +1,17 @@
+Package: beachball
+Type: Package
+Title: Create moment tensor representations of earthquakes (beachballs)
+Version: 0.0-1
+Date: 2015-01-28
+Author: Andrew J Barbour
+Maintainer: Andrew J Barbour <andy.barbour@gmail.com>
+Description: Create moment tensor representations of earthquakes (beachballs)
+    with MoPaD
+Url: MoPaD (http://www.larskrieger.de/mopad/), obspy (http://www.obspy.org)
+License: GPL (>= 2)
+SystemRequirements: obspy
+Imports:
+    Rcpp (>= 0.11.3),
+    png,
+    grid
+LinkingTo: Rcpp
